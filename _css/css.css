@@ -1,0 +1,147 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url("../_images/TioC.png") no-repeat;
+    background-size: 100% 100%;
+    font-family: "Arial";
+}
+.outer {
+    display: flex;
+    align-items: center;
+}
+.inner {
+    margin: auto;
+}
+
+#TioC{
+}
+
+form, .pedido, .pedidos, .sugestoes {
+    position: absolute;
+    width: 256px;
+    height: auto;
+    top: 50%;
+    left: 27%;
+    margin-left: -126px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+form#pedido {
+    margin-top: -276px;
+}
+form#login {
+    margin-top: -237px;
+}
+.pedido {
+    margin-top: -307px;
+}
+.slimScrollDiv {
+    margin-bottom: 30px !important;
+}
+.pedidos, .sugestoes {
+    position: relative;
+    top: 0;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"] {
+    margin: 10px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+.action, button {
+    margin-bottom: 20px;
+    background-color: white;
+}
+.action, form input[type="submit"], button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+}
+.actions {
+    display: inline-flex;
+}
+.actions .action {
+    margin-right: 10px;
+}
+.actions .action:nth-child(1){
+    margin-left: -5px;
+}
+form input[type="submit"] {
+    background-color: white;
+    cursor: pointer;
+}
+select {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px auto 20px auto;
+}
+textarea {
+    margin: 10px auto;
+}
+
+#progressbar {
+  position: relative;
+}
+.progressbar-text {
+    top: -5px !important;
+    position: relative !important;
+}
+#progressbar svg {
+    float: left;
+    width: 70% !important;
+}
+
+span.play {
+    margin-top: -5px;
+}
+
+@media (max-device-width: 1023px) and (min-device-width: 768px) {
+    .pedidos, .sugestoes {
+        height: 965px;
+    }
+}
+
+@media (max-device-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    label, .login, .signup, a.back, input, form input[type="submit"], select {
+        font-size: 12pt;
+    }
+    select {
+        width: 91%;
+    }
+    select option {
+        font-size: 10pt;
+    }
+    form, .pedido, .pedidos, .sugestoes {
+        width: 225px;
+        left: 48%;
+    }
+    .pedidos, .sugestoes {
+        margin-top: 0;
+        height: 586px;
+    }
+}
+
+@media (max-device-width: 320px) {
+    .pedidos, .sugestoes {
+        height: 510px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Padaria do TIO C </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="_css/css.css">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+
+  <div class="outer">
+    <div class="inner">
+
+      <form id="pedido" method="POST" action="pedido.php">
+
+        <h1>Padaria do Tio C</h1>
+        <h3>Faça o seu pedido</h3>
+
+        <br>
+
+        <label for="nome">Digite seu nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" autofocus="true" required="true" /><br>
+
+        <label for="menu">Menu:</label><br>
+        <select name="menu" id="menu">
+          <option value="Pão">Pão</option>
+          <option value="Bolo">Bolo</option>
+          <option value="Torrada">Torrada</option>
+          <option value="Broinha">Broinha</option>
+        </select><br>
+
+        <label for="qtd">Quantidade:</label><br>
+        <input type="number" id="qtd" name="qtd" placeholder="Quantidade de pães" min="1" value="1" required="true" /><br>
+
+        <br>
+        <input type="submit" value="Enviar" />
+
+        <br><br><br>
+        <a href="padaria.php" class="action">Padaria</a>
+        <br><br><br>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>
